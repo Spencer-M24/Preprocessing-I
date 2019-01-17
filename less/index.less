@@ -3,180 +3,274 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-   
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
+
 * {
     box-sizing: border-box;
 }
+
+html, {
+	font-size: 70.0%
+}
+
 
 html, body {
     height: 100%;
 }
 
-p, tr, li {
-	font-family: 'Roboto Condensed', sans-serif;
-
+p,
+tr,
+li {
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .container {
-	margin: 0 auto;
-	font-size: 1.7rem;
-	max-width: 880px;
-	margin: 2%
+    margin: 0 auto;
+    font-size: 1.7rem;
+    max-width: 880px;
+    margin: 2%
 }
 
 .section-headers {
-	font-size: 3.3;
-	font-family: 'Lato', sans-serif;
-
+    font-size: 3.7rem;
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 1%;
 }
 
 .secondary-headers {
-	font-size: 2.3rem;
-	color: red;
-	padding-bottom: 1%;
-	font-family: 'Lato';
+    font-size: 2.3rem;
+    color: black;
+    padding-bottom: 1%;
+    font-family: 'Lato';
 }
 
-@maincolorgreen:  #83BA52;
+@maincolorgreen: #83BA52;
 
-header nav ul{
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	align-content: center;
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: center;
 }
 
-
-
-.intro-section {
-	padding: 3%;
-	background-color: @maincolorgreen;
-	border-radius: 2%;
+header nav ul li {
+    margin-left: 5%;
+    padding: 3% 3% 2% 0%;
 }
 
-
-.intro-section .Intro h1 {
-	font-size: 3rem;
-	justify-content: center;
-	.section-headers
+.intro-holder {
+    padding: 2%;
+    background-color: @maincolorgreen;
+    border-radius: 3%;
 }
-	.intro-section .Intro {
-		border-bottom: 1px solid #000;
+
+.intro-holder .intro-info h1 {
+    font-size: 3rem;
+    justify-content: center;
+	.section-headers;
+}
+
+.intro-holder .intro-info {
+    border-bottom: 1px solid #000;
+}
+
+.intro-holder .intro-info h2 {
+    .secondary-headers;
+}
+
+.section-holder .two-intro p {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.section-holder .two-intro button {
+    color: white;
+    font-size: 1.6rem;
+    border-radius: 3px black;
+    border: 1px solid white;
+    padding: 1.6%;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+ .content2 {
+    display: flex;
+}
+
+.-content2 .num2 {
+    width: 50%;
+    margin: 2% 2% 0 0%
+}
+
+.content2 .num2 h2 {
+    .secondary-headers;
+}
+
+.num2 .table {
+    padding: 3%;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.content2 h2 {
+    .secondary-headers;
+    padding-top: 3%;
+}
+
+.content3 table {
+	width: 100%;
 	
-	}
-
-	.intro-section .intro h2 {
-		.secondary-headers;
-	}
-	.intro-section .intro p {
-		padding-top: 1%;
-		padding-bottom: 1%;
-
-	}
-
-	.intro-section .intro  button {
-		color: white;
-		font-size: 1.6rem;
-		border-radius: 3px black;
-		border: 1px solid white;
-		padding: 1.6%;
-		font-family: 'Roboto Condensed', sans-serif;
-
-
-	}
-
-	.second-container { 
-		display: flex;
 }
-	.second-container .two {
-		width: 60%;
-		margin: 1%
-	}
 
-	.second-container .two h2{
-		.secondary-headers;
-	}
-
-	.two .table{
-		padding: 3%;
-		width: 100%;
-		border: 1px solid black;
-	}
-
-	.contain3 h2 {
-		.secondary-headers;
-		padding-top: 3%;
-
-	}
-
-	.contain3 table {
-		width: 100%
-	}
-
-	.contain3 table tr {
-		border: 1px solid black;
-	}
-
-	.contain3 table th, td {
-		padding: 3%;
-		padding-bottom: 2%;
-		text-align: center;
-	}
-
-	.contain3 table .green {
-		background-color: @maincolorgreen
-	}
-
-	footer {
-		margin-top: 2%;
-		text-align: center;
-	}
-
-
-
+.content3 table tr {
+	border: 0.5px solid black;
 	
+}
+
+.content3 table th, td {
+    padding: 2% 2% 0% 0%;
+    padding-bottom: 2%;
+    text-align: center;
+    vertical-align: top;
+}
+
+.content3 table .green {
+    background-color: @maincolorgreen
+}
+
+footer {
+    margin-top: 2%;
+    text-align: center;
+}

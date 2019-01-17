@@ -130,6 +130,9 @@ table {
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: 70%;
+}
 html,
 body {
   height: 100%;
@@ -146,12 +149,13 @@ li {
   margin: 2%;
 }
 .section-headers {
-  font-size: 3.3;
+  font-size: 3.7rem;
   font-family: 'Lato', sans-serif;
+  padding-bottom: 1%;
 }
 .secondary-headers {
   font-size: 2.3rem;
-  color: red;
+  color: black;
   padding-bottom: 1%;
   font-family: 'Lato';
 }
@@ -161,31 +165,36 @@ header nav ul {
   justify-content: flex-end;
   align-content: center;
 }
-.intro-section {
-  padding: 3%;
-  background-color: #83BA52;
-  border-radius: 2%;
+header nav ul li {
+  margin-left: 5%;
+  padding: 3% 3% 2% 0%;
 }
-.intro-section .Intro h1 {
+.intro-holder {
+  padding: 2%;
+  background-color: #83BA52;
+  border-radius: 3%;
+}
+.intro-holder .intro-info h1 {
   font-size: 3rem;
   justify-content: center;
-  font-size: 3.3;
+  font-size: 3.7rem;
   font-family: 'Lato', sans-serif;
+  padding-bottom: 1%;
 }
-.intro-section .Intro {
+.intro-holder .intro-info {
   border-bottom: 1px solid #000;
 }
-.intro-section .intro h2 {
+.intro-holder .intro-info h2 {
   font-size: 2.3rem;
-  color: red;
+  color: black;
   padding-bottom: 1%;
   font-family: 'Lato';
 }
-.intro-section .intro p {
+.section-holder .two-intro p {
   padding-top: 1%;
   padding-bottom: 1%;
 }
-.intro-section .intro button {
+.section-holder .two-intro button {
   color: white;
   font-size: 1.6rem;
   border-radius: 3px black;
@@ -193,44 +202,45 @@ header nav ul {
   padding: 1.6%;
   font-family: 'Roboto Condensed', sans-serif;
 }
-.second-container {
+.content2 {
   display: flex;
 }
-.second-container .two {
-  width: 60%;
-  margin: 1%;
+.-content2 .num2 {
+  width: 50%;
+  margin: 2% 2% 0 0%;
 }
-.second-container .two h2 {
+.content2 .num2 h2 {
   font-size: 2.3rem;
-  color: red;
+  color: black;
   padding-bottom: 1%;
   font-family: 'Lato';
 }
-.two .table {
+.num2 .table {
   padding: 3%;
   width: 100%;
   border: 1px solid black;
 }
-.contain3 h2 {
+.content2 h2 {
   font-size: 2.3rem;
-  color: red;
+  color: black;
   padding-bottom: 1%;
   font-family: 'Lato';
   padding-top: 3%;
 }
-.contain3 table {
+.content3 table {
   width: 100%;
 }
-.contain3 table tr {
-  border: 1px solid black;
+.content3 table tr {
+  border: 0.5px solid black;
 }
-.contain3 table th,
+.content3 table th,
 td {
-  padding: 3%;
+  padding: 2% 2% 0% 0%;
   padding-bottom: 2%;
   text-align: center;
+  vertical-align: top;
 }
-.contain3 table .green {
+.content3 table .green {
   background-color: #83BA52;
 }
 footer {
